@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col">
+                <div class="col">
+                    <form id="forma">
+                        <div class="form-group">
+                            <label for="numberInput">E-bank</label>
+                            <input type="number" class="form-control" id="numberInput" value="0" placeholder="0-100" />
+                        </div>
+                        <label for="inputState">ACTION</label>
+                        <select id="inputState" class="form-control ">
+                            <option>Add money</option>
+                            <option>Remove money</option>
+                        </select>
+                        <div class="m-2">
+                            <p>Money in the account:
+                            <h6 id="sestas"></h6>
+                            </p>
+                        </div>
+                        <div class="m-2">
+                            <button type="submit" id="btn" class="btn btn-primary">
+                                DO ACTION
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h4 id="history">History</h4>
+                <ul id="history-list">
+                    
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="./javascript/scripts.js"></script>
+
+</html>
